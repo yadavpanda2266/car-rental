@@ -1,0 +1,60 @@
+# ------------------------
+# Node.js (server and client)
+# ------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+.env
+.env.local
+.env.*.local
+
+# ------------------------
+# Logs
+# ------------------------
+logs
+*.log
+log/
+debug.log
+
+# ------------------------
+# OS-specific files
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Build outputs
+# ------------------------
+dist/
+build/
+coverage/
+.cache/
+.next/
+out/
+
+# ------------------------
+# React (client build)
+# ------------------------
+client/node_modules/
+client/build/
+
+# ------------------------
+# Express (server build, if using transpilation like Babel/TS)
+# ------------------------
+server/node_modules/
+server/dist/
+
+# ------------------------
+# Editor/IDE settings
+# ------------------------
+.vscode/
+.idea/
+*.swp
+
+# ------------------------
+# Mongo dump (optional)
+# ------------------------
+dump/
