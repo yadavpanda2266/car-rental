@@ -32,7 +32,7 @@ export const addCar = async(req, res)=>{
         })
 
          // For URL Generation, works for both images and videos
-        var optimizedURL = imagekit.url({
+        var optimizedImageURL = imagekit.url({
         path : response.filePath,
         transformation : [
             {width:'1280'}, //resize image
@@ -41,7 +41,7 @@ export const addCar = async(req, res)=>{
         ]
 });
          
-    const image = optimizedURL;
+    const image = optimizedImageURL;
     await Car.create({...car,owner:_id,image})
     res.json({success:true, message:"Car added successfully"})
 

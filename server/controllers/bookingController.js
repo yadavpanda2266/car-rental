@@ -3,7 +3,7 @@ import Car from "../models/Car.js";
 
 
 //function  to ceck availability of car for a given date range
-const checkAvailability = async (car,pickupDate,returnDate)=>{
+const checkAvailability = async (car, pickupDate, returnDate)=>{
     const bookings = await Booking.find({
         car,
         pickupDate: {$lte:returnDate},
