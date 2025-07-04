@@ -20,6 +20,7 @@ const Cars = () => {
     const isSearchData = pickupLocation && pickupDate && returnDate
     const [filteredCars, setFilteredCars] = useState([])
 
+    
     const applyFilters = ()=>{
       if(input === ''){
         setFilteredCars(cars)
